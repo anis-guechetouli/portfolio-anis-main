@@ -1,0 +1,19 @@
+import type { Metadata } from 'next'
+import './globals.css'
+
+export const metadata: Metadata = {
+  title: 'Portfolio BTS SIO',
+  description: 'Portfolio d\'un étudiant en BTS SIO - Option SISR',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="fr" className="h-full">
+      <body className="h-full overflow-x-hidden">{children}</body>
+    </html>
+  )
+}
