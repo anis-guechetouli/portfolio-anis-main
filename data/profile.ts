@@ -166,14 +166,21 @@ export const certifications = [
 ]
 
 export const projets = [
+   {
+  id: 2,
+  title: "Stage FastTrack — Support & Stockage",
+  description:
+    "Stage au sein de l’entreprise FastTrack (transport). Mise en place d’un serveur de stockage à distance (partage réseau) pour centraliser les fichiers, préparation et configuration de postes (Windows, pilotes, logiciels, mises à jour), montage de PC fixes (installation des composants + tests), support utilisateur (connexion, imprimantes, erreurs Windows) et rédaction de procédures techniques.",
+  tags: ["Support IT", "Windows", "Partage réseau", "Stockage", "Montage PC", "Documentation"],
+  link: "https://dandy-cowbell-23a.notion.site/Stage-Informatique-Support-R-seau-2f4beac706b780d18c65e5274278aaa8",
+},
     {
         id: 1,
         title: "MISE EN PLACE D’UNE INFRASTRUCTURE DE VIRTUALISATION AVEC DOCKER (2024)",
         description:
           "Restauration d’un ancien PC en mini data center avec ajout d’un SSD 1 To pour optimiser le stockage. Installation et configuration de Docker pour déployer plusieurs services conteneurisés (base de données, application web, serveur Minecraft). Mise en place d’une configuration réseau permettant l’accès local et distant aux services (ports, redirections, sécurisation de base).",
         tags: ["Docker", "Linux", "Réseau", "Virtualisation", "Stockage", "Services Web"],
-        link: "#",
-        github: "#",
+        link: "https://dandy-cowbell-23a.notion.site/MISE-EN-PLACE-D-UNE-INFRASTRUCTURE-DE-VIRTUALISATION-AVEC-DOCKER-2f4beac706b7803e8856c15a7f8cccd5",
       },
       {
         id: 2,
@@ -181,9 +188,10 @@ export const projets = [
         description:
           "Développement d’une application de bureau destinée aux DJ permettant de rechercher des musiques sur YouTube et de télécharger l’audio au format MP3. L’application propose une interface graphique simple et rapide, une recherche via l’API YouTube Data, ainsi qu’un téléchargement automatisé avec conversion MP3 grâce à yt-dlp et FFmpeg. L’utilisateur peut sélectionner le dossier de destination avant chaque téléchargement.",
         tags: ["Python", "Tkinter", "YouTube Data API", "yt-dlp", "FFmpeg", "Open Source"],
-        link: "https://www.linkedin.com/posts/anis-guechetouli_projet-perso-open-source-pour-djs-activity-7315713298174283777-f9oU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWVmvMBLLID_qI1lMSM7P5g9cV9ydRHi2I",
+        link: "https://dandy-cowbell-23a.notion.site/APPLICATION-EN-PYTHON-POUR-DJ-OPEN-SOURCE-2f4beac706b780a9a2b8dbd0a2df8133",
         github: "https://github.com/anis-guechetouli/free-musique-DJ",
       },
+
 ]
 
 export const btsSioInfo = {

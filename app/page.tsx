@@ -46,7 +46,7 @@ export default function Home() {
                         <p className="text-2xl md:text-3xl text-gray-300 mb-8">
                             {profile.role}
                         </p>
-                        <div className="flex gap-4 justify-center">
+                        <div className="flex gap-4 justify-center flex-wrap">
                             <a
                                 href={profile.github}
                                 target="_blank"
@@ -55,6 +55,7 @@ export default function Home() {
                                 <Github size={20}/>
                                 GitHub
                             </a>
+
                             <a
                                 href={profile.linkedin}
                                 target="_blank"
@@ -63,7 +64,17 @@ export default function Home() {
                                 <Linkedin size={20}/>
                                 LinkedIn
                             </a>
+
+                            <a
+                                href="https://dandy-cowbell-23a.notion.site/Espace-Projets-2f4beac706b78072b6fbd65566114f82"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-6 py-3 rounded-xl bg-accent/20 text-accent border border-accent/30 hover:bg-accent/30 transition-colors flex items-center gap-2">
+                                <ExternalLink size={20}/>
+                                Espace projets
+                            </a>
                         </div>
+
                     </div>
                 </Section>
 
@@ -134,28 +145,42 @@ export default function Home() {
                 {/* Section Parcours scolaire */}
                 <Section id="parcours-scolaire">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-4xl font-bold mb-8 text-gradient">
-                            Parcours scolaire
-                        </h2>
+                        <div className="flex items-center justify-between mb-8">
+                            <h2 className="text-4xl font-bold text-gradient">Parcours scolaire</h2>
+
+                            <a
+                                href="https://dandy-cowbell-23a.notion.site/Projets-acad-miques-TP-Productions-Projets-r-seaux-2f4beac706b7802ba7dcf3fcdc922060"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 rounded-xl bg-accent/20 text-accent border border-accent/30 text-sm font-semibold hover:bg-accent/30 transition-colors flex items-center gap-2">
+                                Projets académiques
+                                <ExternalLink size={16}/>
+                            </a>
+                        </div>
+
                         <div className="glass rounded-2xl p-8 border border-white/10">
                             <div className="relative">
                                 <div
                                     className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent/50 to-transparent"/>
+
                                 <div className="space-y-6 pl-12">
                                     {
                                         parcoursEcole.map((item, index) => (
                                             <div key={index} className="relative">
                                                 <div
                                                     className="absolute -left-6 w-4 h-4 rounded-full bg-accent border-4 border-dark-bg"/>
+
                                                 <div className="mb-6">
                                                     <div className="flex items-center gap-3 mb-2">
                                                         <span className="text-accent font-bold text-lg">
                                                             {item.year}
                                                         </span>
+
                                                         <h4 className="text-lg font-semibold text-white">
                                                             {item.title}
                                                         </h4>
                                                     </div>
+
                                                     <p className="text-gray-300 mb-2 text-sm whitespace-pre-line leading-relaxed">
                                                         {item.description}
                                                     </p>
@@ -176,19 +201,31 @@ export default function Home() {
                 {/* Section Parcours pro */}
                 <Section id="parcours-pro">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-4xl font-bold mb-8 text-gradient">
-                            Parcours pro
-                        </h2>
+                        <div className="flex items-center justify-between mb-8">
+                            <h2 className="text-4xl font-bold text-gradient">Parcours pro</h2>
+
+                            <a
+                                href="https://dandy-cowbell-23a.notion.site/R-alisations-en-entreprise-missions-support-audits-d-ploiements-2f4beac706b78097b05ae2c0e1b81f15"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 rounded-xl bg-accent/20 text-accent border border-accent/30 text-sm font-semibold hover:bg-accent/30 transition-colors flex items-center gap-2">
+                                Projets pro
+                                <ExternalLink size={16}/>
+                            </a>
+                        </div>
+
                         <div className="glass rounded-2xl p-8 border border-white/10">
                             <div className="relative">
                                 <div
                                     className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent/50 to-transparent"/>
+
                                 <div className="space-y-6 pl-12">
                                     {
                                         parcoursProfessionnel.map((item, index) => (
                                             <div key={index} className="relative">
                                                 <div
                                                     className="absolute -left-6 w-4 h-4 rounded-full bg-accent border-4 border-dark-bg"/>
+
                                                 <div className="mb-6">
                                                     <div className="flex items-center justify-between gap-3 mb-2">
                                                         <div className="flex items-center gap-3">
@@ -217,10 +254,12 @@ export default function Home() {
                                                     <p className="text-gray-300 mb-2 text-sm whitespace-pre-line leading-relaxed">
                                                         {item.description}
                                                     </p>
+
                                                     <div className="flex flex-wrap gap-3 text-sm text-gray-400">
                                                         <span className="flex items-center gap-1">
                                                             <MapPin size={14}/> {item.location}
                                                         </span>
+
                                                         {
                                                             item.duration && (
                                                                 <span className="flex items-center gap-1">
