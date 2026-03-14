@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
-const repo = "portfolio-anis-main"
+const repo = "portfolio-anis-main";
+const isProd = process.env.NODE_ENV === "production";
 
-const nextConfig = {
+module.exports = {
   output: "export",
   images: { unoptimized: true },
-  basePath: `/${repo}`,
-  assetPrefix: `/${repo}/`,
-}
-
-module.exports = nextConfig
+  basePath: isProd ? `/${repo}` : "",
+  assetPrefix: isProd ? `/${repo}/` : "",
+};

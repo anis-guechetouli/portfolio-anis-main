@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import type { CSSProperties } from 'react'
 
 export default function BlobBackground() {
   const blobs = [
@@ -49,7 +50,7 @@ export default function BlobBackground() {
             left: blob.x,
             top: blob.y,
             transform: 'translate(-50%, -50%)',
-          }}
+          } as CSSProperties}
           animate={{
             scale: [1, 1.2, 1],
             x: [0, 30, 0],

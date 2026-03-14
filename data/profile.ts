@@ -161,7 +161,7 @@ export const certifications = [
     issuer: 'Cisco Networking Academy',
     date: '2025',
     link: 'https://www.credly.com/badges/a470fe22-ee03-40c3-ac99-0159df88e92e/public_url',
-    image: '/certifications/Mise à jour I2CS Jan 22.png', // Chemin vers l'image
+   image: "certifications/mise-a-jour-i2cs-jan-22.png", // Chemin vers l'image
   },
 ]
 
